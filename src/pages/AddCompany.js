@@ -50,10 +50,11 @@ export const AddCompany = () => {
       
     
         try {
-          const response = await fetch('http://localhost:8080/registerform', {
+          const response = await fetch('http://payment.hashirtechnologies.com/api/regForm', {
             method: 'POST',
             body: formData,
           });
+
           console.log("data has been added")
           toast.success('Form submitted successfully!', {
             position: "top-right",
